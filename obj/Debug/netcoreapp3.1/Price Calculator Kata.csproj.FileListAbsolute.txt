@@ -1,0 +1,12 @@
+/Users/macbookpro/Desktop/Foothill/Price Calculator Kata/bin/Debug/netcoreapp3.1/Price Calculator Kata.deps.json
+/Users/macbookpro/Desktop/Foothill/Price Calculator Kata/bin/Debug/netcoreapp3.1/Price Calculator Kata.runtimeconfig.json
+/Users/macbookpro/Desktop/Foothill/Price Calculator Kata/bin/Debug/netcoreapp3.1/Price Calculator Kata.runtimeconfig.dev.json
+/Users/macbookpro/Desktop/Foothill/Price Calculator Kata/bin/Debug/netcoreapp3.1/Price Calculator Kata.dll
+/Users/macbookpro/Desktop/Foothill/Price Calculator Kata/bin/Debug/netcoreapp3.1/Price Calculator Kata.pdb
+/Users/macbookpro/Desktop/Foothill/Price Calculator Kata/obj/Debug/netcoreapp3.1/Price Calculator Kata.csprojAssemblyReference.cache
+/Users/macbookpro/Desktop/Foothill/Price Calculator Kata/obj/Debug/netcoreapp3.1/Price Calculator Kata.AssemblyInfoInputs.cache
+/Users/macbookpro/Desktop/Foothill/Price Calculator Kata/obj/Debug/netcoreapp3.1/Price Calculator Kata.AssemblyInfo.cs
+/Users/macbookpro/Desktop/Foothill/Price Calculator Kata/obj/Debug/netcoreapp3.1/Price Calculator Kata.csproj.CoreCompileInputs.cache
+/Users/macbookpro/Desktop/Foothill/Price Calculator Kata/obj/Debug/netcoreapp3.1/Price Calculator Kata.dll
+/Users/macbookpro/Desktop/Foothill/Price Calculator Kata/obj/Debug/netcoreapp3.1/Price Calculator Kata.pdb
+/Users/macbookpro/Desktop/Foothill/Price Calculator Kata/obj/Debug/netcoreapp3.1/Price Calculator Kata.genruntimeconfig.cache
