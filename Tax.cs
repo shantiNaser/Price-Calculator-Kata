@@ -8,25 +8,56 @@ namespace Price_Calculator_Kata
         {
             set { flat_rate_tax = value; }
         }
-        Product product;
-        double FinalPrice;
 
-        // Constructer .... 
+        public double flat_rate_tax_amount { get; private set; }
+        private double setTaxAmount
+        {
+            set { flat_rate_tax_amount = value; }
+        }
+
+
+        Product product;
+
+        public double FinalPrice { get; private set; }
+        private double setFinalPrice
+        {
+            set { FinalPrice = value; }
+        }
+
+        // Constructer....
         public Tax(string name, int UPC, double Price, double tax)
         {
             product = new Product(name, UPC, Price);
             setTax = tax;
-            double Totall = Price + (Price * (tax / 100));
-            FinalPrice = Totall;
+            setTaxAmount = (product.Price * (tax / 100));
+            setFinalPrice = PriceAfterTax(tax);
+            string result = Report();
+            System.Console.WriteLine(result);
         }
 
-        // Query Should return a data , since it has no affect in the system ...
-        public string PriceWithTax()
+        public double PriceAfterTax(double tax)
         {
-            string ProductInfo = product.GetProductInformation();
-            string Finall_Price = $"Product price reported as ${product.Price} before tax and ${Math.Round(FinalPrice, 2)} after {flat_rate_tax}% tax.";
-            return ProductInfo + "\n" + Finall_Price;
+            return product.Price + (product.Price * (tax / 100));
         }
+
+
+        // Query Should return a data , since it has no affect in the system ...
+        public string Report()
+        {
+            string Finall_Price = $"Product price reported as ${RealPrice()} before tax and ${Math.Round(FinalPrice, 2)} after {flat_rate_tax}% tax.";
+            return GetProductInfo() + "\n" + Finall_Price;
+        }
+
+        public string GetProductInfo()
+        {
+            return product.GetProductInformation();
+        }
+
+        public double RealPrice()
+        {
+            return product.Price;
+        }
+
 
 
 
