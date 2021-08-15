@@ -31,8 +31,6 @@ namespace Price_Calculator_Kata
             setTax = tax;
             setTaxAmount = (product.Price * (tax / 100));
             setFinalPrice = PriceAfterTax(tax);
-            string result = Report();
-            System.Console.WriteLine(result);
         }
 
         public double PriceAfterTax(double tax)

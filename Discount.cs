@@ -58,8 +58,8 @@ namespace Price_Calculator_Kata
             if (Choose == true)
             {
                 string TaxDiscountValues = $"Tax value = {tax.flat_rate_tax}%, Discount value = {DiscountValue}%";
-                string TaxDiscountAmounts = $"Tax amount= {taxAmount}$, Discount amount = {DiscountAmount}$";
-                string PriceSituation = $"Price before {RealPrice}$ , Price After {Math.Round(FinalPrice, 2)}$";
+                string TaxDiscountAmounts = $"Tax amount= {Math.Round(taxAmount, 2)}$, Discount amount = {DiscountAmount}$";
+                string PriceSituation = $"Real Price = {RealPrice}$ , Price After unviersal Discount = {Math.Round(FinalPrice, 2)}$";
 
                 return ProductInfo + "\n" + TaxDiscountValues + "\n"
                 + TaxDiscountAmounts + "\n" + PriceSituation;
@@ -67,15 +67,14 @@ namespace Price_Calculator_Kata
             else
             {
                 string TaxDiscountValues = $"Tax value = {tax.flat_rate_tax}%, No Discount";
-                string TaxDiscountAmounts = $"Tax amount= {taxAmount}$";
-                string PriceSituation = $"Price before {RealPrice}$ , Price After {Math.Round(tax.FinalPrice, 2)}$";
+                string TaxDiscountAmounts = $"Tax amount= {Math.Round(taxAmount, 2)}$";
+                string PriceSituation = $"Price before = {RealPrice}$ , Price After = {Math.Round(tax.FinalPrice, 2)}$";
                 return ProductInfo + "\n" + TaxDiscountValues + "\n"
                 + TaxDiscountAmounts + "\n" + PriceSituation + "\n"
                 + "Program doesn’t show any discounted amount. ";
 
             }
         }
-
 
     }
 }
