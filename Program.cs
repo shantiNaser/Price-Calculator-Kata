@@ -22,7 +22,11 @@ namespace Price_Calculator_Kata
             // System.Console.WriteLine(upc.PrecedenceReport());
             // ----------------------------------------------------------------------------------
 
-            Expenses E = new Expenses("The Little Prince", 12345, 20.25, 21, 15, 7, 1, 2.2);
+            // Expenses E = new Expenses("The Little Prince", 12345, 20.25, 21, 15, 7, 1, 2.2);
+            // ----------------------------------------------------------------------------------
+
+
+            Combining c = new Combining("The Little Prince", 12345, 20.25, 21, 15, 7, 1, 2.2, 2);
         }
     }
 }

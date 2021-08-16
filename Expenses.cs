@@ -15,7 +15,6 @@ namespace Price_Calculator_Kata
             double Taxvalue = (Price * (taxAmount / 100));
             double AllDiscaount = ((Price * (discount / 100)) + (Price * (UPCDiscount / 100)));
             double PackagingValue = (Price * (Packaging / 100));
-
             string Report = PrepareReportWithAdditionalCost(Price, Taxvalue, AllDiscaount, PackagingValue, Transport);
             System.Console.WriteLine(Report);
         }
@@ -29,6 +28,7 @@ namespace Price_Calculator_Kata
             System.Console.WriteLine(Report);
         }
 
+
         public string PrepareReportWithAdditionalCost(double Price, double Tax, double AllDiscaount, double PackagingValue, double Transport)
         {
             return $"Cost = {Math.Round(Price, 2)}$" + "\n" +
@@ -38,6 +38,7 @@ namespace Price_Calculator_Kata
                    $"Transport = {Math.Round(Transport, 2)}$" + "\n" +
                    $"Totall = {Math.Round((Price + Tax - AllDiscaount + PackagingValue + Transport), 2)}";
         }
+
 
         public string PrepareReportWithoutAdditionalCost(double Price, double TaxingValue)
         {
