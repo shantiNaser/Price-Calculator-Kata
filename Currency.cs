@@ -45,7 +45,7 @@ namespace Price_Calculator_Kata
             if (AllDiscaount == 0)
                 IsThereDiscount = "No Discount ...";
             else
-                IsThereDiscount = $"All Discount = {AllDiscaount} {currency}";
+                IsThereDiscount = $"All Discount = {Math.Round(AllDiscaount, 2)} {currency}";
 
             return $"Cost = {Math.Round(Price, 2)} {currency} " + "\n" +
                    $"Tax  = {Math.Round(Tax, 2)} {currency} " + "\n" +
