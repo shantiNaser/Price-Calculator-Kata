@@ -25,8 +25,10 @@ namespace Price_Calculator_Kata
             // Expenses E = new Expenses("The Little Prince", 12345, 20.25, 21, 15, 7, 1, 2.2);
             // ----------------------------------------------------------------------------------
 
+            // Combining c = new Combining("The Little Prince", 12345, 20.25, 21, 15, 7, 1, 2.2, 2);
+            // ----------------------------------------------------------------------------------
 
-            Combining c = new Combining("The Little Prince", 12345, 20.25, 21, 15, 7, 1, 2.2, 2);
+            Cap cap = new Cap("The Little Prince", 12345, 20.25, 21, 15, 7, 30);
         }
     }
 }
