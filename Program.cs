@@ -28,7 +28,11 @@ namespace Price_Calculator_Kata
             // Combining c = new Combining("The Little Prince", 12345, 20.25, 21, 15, 7, 1, 2.2, 2);
             // ----------------------------------------------------------------------------------
 
-            Cap cap = new Cap("The Little Prince", 12345, 20.25, 21, 15, 7, 30);
+            // Cap cap = new Cap("The Little Prince", 12345, 20.25, 21, 15, 7, 30);
+            // ----------------------------------------------------------------------------------
+
+
+            Currency USD = new Currency("The Little Prince", 12345, 20.25, 20, 15, "GBP");
         }
     }
 }

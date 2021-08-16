@@ -57,7 +57,8 @@ namespace Price_Calculator_Kata
         }
 
 
-        public string SELECTIVEReport()
+
+        public string SelectiveReport()
         {
             string ProductInfo = universal_Discount.ProductInfo();
             double TaxAmount = universal_Discount.TaxAmount();
@@ -73,7 +74,7 @@ namespace Price_Calculator_Kata
             $"All the Discount Amount is {Math.Round((universal_Discount.DiscountAmount + UPCDiscountAmount), 2) }$";
         }
 
-        public string PRECEDENCEReport2()
+        public string PrecedenceReport()
         {
             string ProductInfo = universal_Discount.ProductInfo();
             double TaxAmount = universal_Discount.TaxAmount();
