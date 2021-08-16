@@ -32,7 +32,11 @@ namespace Price_Calculator_Kata
             // ----------------------------------------------------------------------------------
 
 
-            Currency USD = new Currency("The Little Prince", 12345, 20.25, 20, 15, "GBP");
+            // Currency USD = new Currency("The Little Prince", 12345, 20.25, 20, 15, "GBP");
+            // ----------------------------------------------------------------------------------
+
+
+            Precision pre = new Precision("The Little Prince", 12345, 20.25, 21, 15, 7, 3);
         }
     }
 }
