@@ -15,6 +15,8 @@ namespace Price_Calculator_Kata
             this.Price = Price;
         }
 
+
+        // Query to get the product Information ....
         public string GetProductInformation()
         {
             return $"Product Name \"{Name}\", UPC = {UPC} , Price = ${Price}";

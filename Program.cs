@@ -6,7 +6,7 @@ namespace Price_Calculator_Kata
     {
         static void Main(string[] args)
         {
-            // ----> Tax ProductTax = new Tax("The Little Prince", 12345, 20.25, 21);
+            // Tax ProductTax = new Tax("The Little Prince", 12345, 20.25, 20);
             // System.Console.WriteLine(ProductTax.Report());
             // ----------------------------------------------------------------------------------
 
@@ -36,7 +36,7 @@ namespace Price_Calculator_Kata
             // ----------------------------------------------------------------------------------
 
 
-            Precision pre = new Precision("The Little Prince", 12345, 20.25, 21, 15, 7, 3);
+            Precision pre = new Precision("The Little Prince", 12345, 20.25, 21, 15, 7, 3, "USD");
         }
     }
 }

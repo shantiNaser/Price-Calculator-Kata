@@ -7,6 +7,8 @@ namespace Price_Calculator_Kata
         Expenses case1;
         UPCDiscount case2;
 
+        // Choice declare the sitaution based on if the discount is additive - discounts
+        // or 2 -  multiplicative - each discount  
         public Combining(string name, int UPC, double Price, double Taxvalue,
         double Discount, double UPCDiscount, double PackagingValue, double Transport, int Choice)
         {

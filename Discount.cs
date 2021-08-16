@@ -41,13 +41,14 @@ namespace Price_Calculator_Kata
             setTaxValue = taxValue;
             SetDiscountValue = discount;
             SetDiscountAmount = Price * (discount / 100);
-            setFinalPrice = tax.PriceAfterTax(taxValue) - DiscountAmount;
+            setFinalPrice = tax.flat_rate_tax_amount - DiscountAmount;
 
         }
 
-        public Discount(string name, int UPC, double Price, double taxAmount)
+        // Constructer deal with Product that has no discount ...
+        public Discount(string name, int UPC, double Price, double taxValue)
         {
-            tax = new Tax(name, UPC, Price, taxAmount);
+            tax = new Tax(name, UPC, Price, taxValue);
 
         }
 
@@ -76,7 +77,7 @@ namespace Price_Calculator_Kata
 
             if (Choose == true)
             {
-                string TaxDiscountValues = $"Tax value = {tax.flat_rate_tax}%, Discount value = {DiscountValue}%";
+                string TaxDiscountValues = $"Tax value = {tax.flat_rate_tax_Value}%, Discount value = {DiscountValue}%";
                 string TaxDiscountAmounts = $"Tax amount= {Math.Round(taxAmount, 2)}$, Discount amount = {DiscountAmount}$";
                 string PriceSituation = $"Real Price = {RealPrice}$ , Price After unviersal Discount = {Math.Round(FinalPrice, 2)}$";
 
@@ -85,7 +86,7 @@ namespace Price_Calculator_Kata
             }
             else
             {
-                string TaxDiscountValues = $"Tax value = {tax.flat_rate_tax}%, No Discount";
+                string TaxDiscountValues = $"Tax value = {tax.flat_rate_tax_Value}%, No Discount";
                 string TaxDiscountAmounts = $"Tax amount= {Math.Round(taxAmount, 2)}$";
                 string PriceSituation = $"Price before = {RealPrice}$ , Price After = {Math.Round(tax.FinalPrice, 2)}$";
                 return PeoductInformation + "\n" + TaxDiscountValues + "\n"

@@ -3,10 +3,10 @@ namespace Price_Calculator_Kata
 {
     public class Tax
     {
-        public double flat_rate_tax { get; private set; }
-        private double setTax
+        public double flat_rate_tax_Value { get; private set; }
+        private double setTaxValue
         {
-            set { flat_rate_tax = value; }
+            set { flat_rate_tax_Value = value; }
         }
 
         public double flat_rate_tax_amount { get; private set; }
@@ -28,21 +28,16 @@ namespace Price_Calculator_Kata
         public Tax(string name, int UPC, double Price, double tax)
         {
             product = new Product(name, UPC, Price);
-            setTax = tax;
-            setTaxAmount = (product.Price * (tax / 100));
-            setFinalPrice = PriceAfterTax(tax);
-        }
-
-        public double PriceAfterTax(double tax)
-        {
-            return product.Price + (product.Price * (tax / 100));
+            setTaxValue = tax;
+            setTaxAmount = (Price * (tax / 100));
+            setFinalPrice = Price + flat_rate_tax_amount;
         }
 
 
         // Query Should return a data , since it has no affect in the system ...
         public string Report()
         {
-            string Finall_Price = $"Product price reported as ${RealPrice()} before tax and ${Math.Round(FinalPrice, 2)} after {flat_rate_tax}% tax.";
+            string Finall_Price = $"Product price reported as ${RealPrice()} before tax and ${Math.Round(FinalPrice, 2)} after {flat_rate_tax_Value}% tax.";
             return GetProductInfo() + "\n" + Finall_Price;
         }
 
